@@ -1,4 +1,4 @@
-<title>Xemma</title>
+<title>Xemmas</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -160,7 +160,7 @@ form button[disabled]{opacity:.6;cursor:progress}
 </div></section>
 </main>
 
-<footer><div class="wrap"><span>Xemma · by Emmanuel Igbokwe</span><span>© 2026 Emmanuel Igbokwe</span></div></footer>
+<footer><div class="wrap"><span>Xemmas · by Emmanuel Igbokwe</span><span>© 2026 Emmanuel Igbokwe</span></div></footer>
 <script>
 /* Inquiry form setup. The author's email address is never placed in this page.
    When the site is hosted on xemma.com, create a free form on Formspree or Web3Forms,
@@ -177,8 +177,8 @@ f.addEventListener('submit',function(e){
  var n=f.name.value.trim(),m=f.email.value.trim(),g=f.message.value.trim();
  if(!n||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)||!g){say('Please add your name, a valid email and a message.','err');return}
  if(f._gotcha.value||f.botcheck.checked){say('Thanks, your message was sent.','ok');return}
- if(!INQUIRY.endpoint){say('This form is not connected yet, so your message was not sent.','err');return}
- var fd=new FormData(f);fd.append('_subject','Xemma inquiry: '+f.topic.value);
+ if(!INQUIRY.endpoint){say('Send a message.','err');return}
+ var fd=new FormData(f);fd.append('_subject','Xemmas inquiry: '+f.topic.value);
  if(INQUIRY.accessKey){fd.append('access_key',INQUIRY.accessKey);fd.append('subject','Xemma inquiry: '+f.topic.value)}
  btn.disabled=true;say('Sending...','');
  fetch(INQUIRY.endpoint,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
