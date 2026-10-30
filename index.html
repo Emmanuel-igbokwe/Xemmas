@@ -80,14 +80,14 @@ form button[disabled]{opacity:.6;cursor:progress}
 </style>
 
 <header class="top"><div class="wrap">
-<a class="mark" href="#top">Xemma<i>.</i></a>
+<a class="mark" href="#top">Xemmas<i>.</i></a>
 <nav aria-label="Books"><a href="facility-handbook.html">Facility Handbook</a><a href="data-center-book.html">Data Center Book</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main id="top">
 <div class="hero"><div class="wrap">
 <p class="eyebrow">Two practitioner books · one set of drawings</p>
-<h1>Welcome to <span>Xemma</span></h1>
+<h1>Welcome to <span>Xemmas</span></h1>
 <p class="lede">Practical guides for the people who build, run and inspect buildings. Start with how data center projects really get delivered, or with how a facility is managed and inspected once people are inside it.</p>
 <div class="cta"><a class="btn pri" href="facility-handbook.html">Open the Facility Handbook</a><a class="btn" href="data-center-book.html">Open the Data Center Book</a></div>
 </div></div>
@@ -154,7 +154,7 @@ form button[disabled]{opacity:.6;cursor:progress}
 <section style="padding-block:0;border-top:1px solid var(--line)"><div class="wrap author" style="padding-block:48px">
 <div><h2>About the author</h2></div>
 <div>
-<p>Emmanuel Igbokwe is a project manager and engineer based in Baton Rouge, Louisiana, with experience in capital projects, MEP and industrial equipment delivery, and public-sector facility programs. He holds graduate degrees in engineering from LSU and Southern University.</p>
+<p>Emmanuel Igbokwe is a project manager and engineer based in Louisiana, with experience in capital projects, MEP and industrial equipment delivery, and public-sector facility programs. He holds graduate degrees in engineering from LSU and Southern University.</p>
 <p class="note">These books are practical guides for learning and planning. They are not legal, engineering or code-compliance advice. Always confirm requirements with your local authority.</p>
 </div>
 </div></section>
@@ -163,7 +163,7 @@ form button[disabled]{opacity:.6;cursor:progress}
 <footer><div class="wrap"><span>Xemmas · by Emmanuel Igbokwe</span><span>© 2026 Emmanuel Igbokwe</span></div></footer>
 <script>
 /* Inquiry form setup. The author's email address is never placed in this page.
-   When the site is hosted on xemma.com, create a free form on Formspree or Web3Forms,
+   When the site is hosted on xemmas.com, create a free form on Formspree or Web3Forms,
    register the author's email there, and paste ONE of these two values below.
    Formspree: endpoint 'https://formspree.io/f/xxxxxxxx'
    Web3Forms: endpoint 'https://api.web3forms.com/submit' and accessKey '...' */
@@ -171,7 +171,7 @@ var INQUIRY={endpoint:'',accessKey:''};
 (function(){
 var f=document.getElementById('inq'),st=document.getElementById('fstatus'),btn=document.getElementById('f-send');
 function say(t,c){st.textContent=t;st.className=c||''}
-if(!INQUIRY.endpoint){say('Preview: the inquiry form is not connected yet, so nothing is sent from this page.','')}
+if(!INQUIRY.endpoint){say('Preview','')}
 f.addEventListener('submit',function(e){
  e.preventDefault();
  var n=f.name.value.trim(),m=f.email.value.trim(),g=f.message.value.trim();
